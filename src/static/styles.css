@@ -87,14 +87,33 @@ section h3 {
 }
 
 .participants-list {
+  list-style: none;
   margin: 0;
-  padding-left: 20px;
+  padding: 0;
   color: #0066cc;
 }
 
 .participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   margin-bottom: 5px;
   font-size: 14px;
+}
+
+.remove-participant-btn {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 6px;
+}
+
+.remove-participant-btn:hover {
+  color: #9a1f1f;
 }
 
 .no-participants {
